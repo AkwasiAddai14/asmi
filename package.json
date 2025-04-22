@@ -12,6 +12,7 @@
   "dependencies": {
     "@clerk/localizations": "^1.28.10",
     "@clerk/nextjs": "^6.16.0",
+    "@emotion/react": "^11.14.0",
     "@headlessui/react": "^2.1.0",
     "@heroicons/react": "^2.2.0",
     "@hookform/resolvers": "^5.0.1",

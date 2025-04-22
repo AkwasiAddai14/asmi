@@ -31,11 +31,10 @@ import { AlertDialog,
 import FactuurCard from '@/components/cards/FactuurCard';
 import { useRouter } from 'next/navigation';
 import { IVacature } from '@/lib/models/vacature.model';
-
 import VacatureCard from '@/components/cards/VacatureCard';
 import { haalGeplaatsteVacatures } from '@/lib/actions/vacature.actions';
-import { Card } from '@/components/Card';
 import { haalFlexpools, maakFlexpool } from '@/lib/actions/flexpool.actions';
+import Flexpool from '@/lib/models/flexpool.model';
 
 
 

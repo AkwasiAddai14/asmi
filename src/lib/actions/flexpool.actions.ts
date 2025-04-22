@@ -1,10 +1,12 @@
+'use server'
+
+
 import mongoose, { Types } from "mongoose";
 import Bedrijf, { IBedrijf } from "../models/bedrijf.model";
-import Niewkomer, { INieuwkomer } from '@/lib/models/nieuwkomer.model'
 import { connectToDB } from "../mongoose";
 import { currentUser } from "@clerk/nextjs/server";
 import Nieuwkomer from "@/lib/models/nieuwkomer.model";
-import Flexpool, { IFlexpool } from "../models/Flexpool.model";
+import Flexpool, { IFlexpool } from "../models/flexpool.model";
 
 export const haalFlexpools = async (bedrijfId: string): Promise<IFlexpool[]> => {
     try {

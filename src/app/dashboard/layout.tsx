@@ -2,7 +2,7 @@
 import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import '@/app/globals.css'
+import '@/styles/tailwind.css'
 import { Toaster } from "@/components/ui/toaster"
 
 

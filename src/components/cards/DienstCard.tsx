@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import  del  from "@/app/assets/images/logos/delete.svg"
+import  del  from "@/images/logos/delete.svg"
 import { useToast } from '@/components/ui/use-toast';
 import { useRouter } from 'next/navigation';
 import { IDienst } from '@/lib/models/dienst.model';
