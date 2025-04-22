@@ -1,0 +1,40 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Team [Jouw Bedrijfsnaam]',
+  date: '2024-12-04',
+  title: 'Van nieuwkomer tot waardevolle kracht: het verhaal van Amina',
+  description:
+    'Hoe Amina, een statushouder uit Eritrea, met de juiste begeleiding haar weg vond naar werk en zelfstandigheid in Nederland.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+Toen Amina (32) drie jaar geleden als statushouder vanuit Eritrea naar Nederland kwam, wilde ze maar één ding:  
+haar leven opnieuw opbouwen en bijdragen aan de samenleving. Met veel werkervaring als schoonmaakmedewerker in haar thuisland,  
+maar zonder netwerk of kennis van de Nederlandse arbeidsmarkt, wist ze niet waar ze moest beginnen.
+
+Via een lokale taalschool kwam Amina in contact met Junter. Samen met een jobcoach keek zij naar haar mogelijkheden, wensen en ambities.  
+We hielpen haar bij het schrijven van een Nederlands CV, oefenden sollicitatiegesprekken en regelden een taalondersteuningstraject naast het werk.
+
+```js
+// Zo begeleiden wij kandidaten als Amina
+import { begeleiden, matchen, trainen } from '@jouw-bedrijfsnaam/traject'
+
+export function KandidatenTraject({ kandidaat }) {
+  return (
+    <begeleiden
+      kandidaat={kandidaat}
+      traject="persoonlijk"
+      begeleiding="sollicitatie + taalondersteuning"
+      doel="duurzame werkplek"
+    >
+      {kandidaat.ervaring}
+    </begeleiden>
+  )
+}
