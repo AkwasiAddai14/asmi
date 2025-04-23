@@ -81,5 +81,8 @@
   },
   "experimental": {
     "turbo": false
+  },
+  "engines": {
+    "node": "20"
   }
 }
