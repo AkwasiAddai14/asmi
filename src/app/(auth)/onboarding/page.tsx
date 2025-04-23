@@ -6,6 +6,8 @@ import BedrijfsForm from '@/components/forms/BedrijfForm';
 import GemeenteForm from '@/components/forms/GemeenteForm';
 import OnboardingDialog from "@/components/OnboardingDialog";
 import { useRouter } from 'next/navigation';
+import {  nlNL, } from '@clerk/localizations'
+import { ClerkProvider } from '@clerk/nextjs';
 
 function Page() {
   const router = useRouter()
@@ -33,6 +35,10 @@ function Page() {
 
   return (
 <>
+    <ClerkProvider
+    localization={nlNL}
+    publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+    >
       <main className="flex-grow">
         {showDialog ? (
           <OnboardingDialog
@@ -96,6 +102,7 @@ function Page() {
           }} />
         )}
       </main>
+      </ClerkProvider>
     </>
   );
 }
