@@ -1,4 +1,4 @@
-"use client";
+/* "use client";
 
 import { useState } from 'react';
 import NieuwkomerForm from "@/components/forms/NieuwkomerForm";
@@ -106,6 +106,7 @@ function Page() {
     </>
   );
 }
-  {/* <RedirectToCreateOrganization/> */}
 export default Page;
 
+*/
+{/* <RedirectToCreateOrganization/> */}

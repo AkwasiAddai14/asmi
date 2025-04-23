@@ -30,7 +30,7 @@ export function Footer() {
                 <NavLink href="/gemeentes">Gemeenten</NavLink>
                 <NavLink href="/nieuwkomers">Nieuwkomers</NavLink>
                 <NavLink href="/bedrijven">Bedrijven</NavLink>
-                <NavLink href="../sign-up">Aanmelden</NavLink>
+                {/* <NavLink href="../sign-up">Aanmelden</NavLink> */}
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Junter. Alle rechten voorbehouden.

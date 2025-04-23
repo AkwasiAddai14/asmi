@@ -1,6 +1,4 @@
-import { Providers } from "@/app/providers";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+/*import { Providers } from "@/app/providers";
 import { SignIn } from "@clerk/nextjs";
 
 export default function Page() {
@@ -15,4 +13,4 @@ export default function Page() {
       </Providers>
     </>
   );
-}
+}  */

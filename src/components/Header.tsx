@@ -124,8 +124,8 @@ function MobileNavigation(
             <MobileNavItem href="/about">Gemeenten</MobileNavItem>
             <MobileNavItem href="/projects">Bedrijven</MobileNavItem>
             <MobileNavItem href="/articles">Nieuwkomers</MobileNavItem>
-            <MobileNavItem href="/speaking">Aanmelden</MobileNavItem>
-            <MobileNavItem href="/uses">Inloggen</MobileNavItem>
+            {/* <MobileNavItem href="/speaking">Aanmelden</MobileNavItem> */}
+            {/* <MobileNavItem href="/uses">Inloggen</MobileNavItem> */}
           </ul>
         </nav>
       </PopoverPanel>
@@ -169,8 +169,8 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
         <NavItem href="/gemeentes">Gemeenten</NavItem>
         <NavItem href="/bedrijven">Bedrijven</NavItem>
         <NavItem href="/nieuwkomers">Nieuwkomers</NavItem>
-        <NavItem href="../sign-up">Aanmelden</NavItem>
-        <NavItem href="../sign-in">Inloggen</NavItem>
+        {/* <NavItem href="../sign-up">Aanmelden</NavItem> */}
+        {/* <NavItem href="../sign-in">Inloggen</NavItem> */}
       </ul>
     </nav>
   )
