@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from 'react';
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import NieuwkomerForm from "@/components/forms/NieuwkomerForm";
 import BedrijfsForm from '@/components/forms/BedrijfForm';
 import GemeenteForm from '@/components/forms/GemeenteForm';
