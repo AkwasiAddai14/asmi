@@ -1,0 +1,51 @@
+# Settings for Backend (on Cloud Run).
+# See https://firebase.google.com/docs/app-hosting/configure#cloud-run
+runConfig:
+  minInstances: 0
+  maxInstances: 1
+  concurrency: 100
+  cpu: 8
+  memoryMiB: 16384
+
+  env:
+   - variable: NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+     secret: pk_live_Y2xlcmsuanVudGVyLmV1JA
+      - variable: CLERK_SECRET_KEY
+     value: sk_live_hEUWpfMYNnfUlApiG6l6b8uJLEatla9vrl3lyhvssW
+
+
+
+  # Environment variables and secrets
+# env:
+#   - variable: STORAGE_BUCKET
+#     value: mybucket.appspot.com
+#     availability:
+#       - BUILD
+#       - RUNTIME
+  # Environment variables and secrets
+# env:
+#   - variable: STORAGE_BUCKET
+#     value: mybucket.appspot.com
+#     availability:
+#       - BUILD
+#       - RUNTIME
+
+#   - variable: API_KEY
+#     secret: myApiKeySecret
+
+
+# Environment variables and secrets.
+# env:
+  # Configure environment variables.
+  # See https://firebase.google.com/docs/app-hosting/configure#user-defined-environment
+  # - variable: MESSAGE
+  #   value: Hello world!
+  #   availability:
+  #     - BUILD
+  #     - RUNTIME
+
+
+  # Grant access to secrets in Cloud Secret Manager.
+  # See https://firebase.google.com/docs/app-hosting/configure#secret-parameters
+  # - variable: MY_SECRET
+  #   secret: mySecretRef
