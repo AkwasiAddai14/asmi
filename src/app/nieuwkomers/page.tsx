@@ -22,7 +22,11 @@ const features = [
   },
 ];
 
-export default function StatushoudersPage() {
+export default function StatushoudersPage({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

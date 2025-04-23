@@ -122,8 +122,8 @@ function MobileNavigation(
         <nav className="mt-6">
           <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
             <MobileNavItem href="/about">Gemeenten</MobileNavItem>
-            <MobileNavItem href="/articles">Nieuwkomers</MobileNavItem>
             <MobileNavItem href="/projects">Bedrijven</MobileNavItem>
+            <MobileNavItem href="/articles">Nieuwkomers</MobileNavItem>
             <MobileNavItem href="/speaking">Aanmelden</MobileNavItem>
             <MobileNavItem href="/uses">Inloggen</MobileNavItem>
           </ul>
@@ -167,8 +167,8 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/gemeentes">Gemeenten</NavItem>
-        <NavItem href="/nieuwkomers">Nieuwkomers</NavItem>
         <NavItem href="/bedrijven">Bedrijven</NavItem>
+        <NavItem href="/nieuwkomers">Nieuwkomers</NavItem>
         <NavItem href="../sign-up">Aanmelden</NavItem>
         <NavItem href="../sign-in">Inloggen</NavItem>
       </ul>

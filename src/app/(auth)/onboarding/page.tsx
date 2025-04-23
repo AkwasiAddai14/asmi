@@ -35,7 +35,6 @@ function Page() {
 
   return (
 <>
-      <Header />
       <main className="flex-grow">
         {showDialog ? (
           <OnboardingDialog
@@ -99,7 +98,6 @@ function Page() {
           }} />
         )}
       </main>
-      <Footer />
     </>
   );
 }

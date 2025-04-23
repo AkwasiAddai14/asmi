@@ -1,6 +1,13 @@
 import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/react/20/solid';
+import foto from '@/images/photos/iStock-1298571081.jpg'
+import Image from 'next/image';
 
-export default function GemeentenPage() {
+
+export default function GemeentenPage({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <div className="bg-white px-6 py-32 lg:px-8">
       <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
@@ -73,9 +80,9 @@ export default function GemeentenPage() {
           </p>
         </div>
         <figure className="mt-16">
-          <img
+          <Image
             alt="Statushouders aan het werk"
-            src="https://images.unsplash.com/photo-1581091012184-5cfd0e9026f8?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
+            src={foto}
             className="aspect-video rounded-xl bg-gray-50 object-cover"
           />
           <figcaption className="mt-4 flex gap-x-2 text-sm/6 text-gray-500">
