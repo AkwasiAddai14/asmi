@@ -9,8 +9,8 @@
   },
   "functions": [
     {
-      "source": "functions",
-      "codebase": "default",
+      "source": "functions-asmi",
+      "codebase": "functions-asmi",
       "ignore": [
         "node_modules",
         ".git",
