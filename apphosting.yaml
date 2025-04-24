@@ -9,11 +9,11 @@ runConfig:
 
 env:
 -   variable: NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
-    value: pk_live_Y2xlcmsuanVudGVyLmV1JA
+    value: NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
 
 env:
 -   variable: CLERK_SECRET_KEY
-    value: sk_live_hEUWpfMYNnfUlApiG6l6b8uJLEatla9vrl3lyhvssW
+    value: CLERK_SECRET_KEY
 # Environment variables and secrets.
 # env:
   # Configure environment variables.
