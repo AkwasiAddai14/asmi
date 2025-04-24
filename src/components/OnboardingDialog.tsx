@@ -19,7 +19,7 @@ interface OnboardingDialogProps {
       {
         id: 1,
         title: 'Gemeente',
-        href: onMunicipalitySelected,
+        onClick: onMunicipalitySelected,
         description:
           'Beheer eenvoudig accounts, plaats vacatures en help inwoners sneller aan werk. Als gemeente speel je een centrale rol in het verbinden van mensen met kansen.',
           imageUrl: gemeente

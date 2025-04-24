@@ -1,0 +1,450 @@
+[debug] [2025-04-24T09:59:03.014Z] ----------------------------------------------------------------------
+[debug] [2025-04-24T09:59:03.021Z] Command:       /Users/georgeaddai/.nvm/versions/node/v23.11.0/bin/node /Users/georgeaddai/.nvm/versions/node/v23.11.0/bin/firebase deploy --only functions:functions-asmi,hosting
+[debug] [2025-04-24T09:59:03.021Z] CLI Version:   14.2.0
+[debug] [2025-04-24T09:59:03.022Z] Platform:      darwin
+[debug] [2025-04-24T09:59:03.022Z] Node Version:  v23.11.0
+[debug] [2025-04-24T09:59:03.022Z] Time:          Thu Apr 24 2025 11:59:03 GMT+0200 (Central European Summer Time)
+[debug] [2025-04-24T09:59:03.022Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-24T09:59:03.113Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-24T09:59:03.113Z] > authorizing via signed-in user (akwasivdsm@gmail.com)
+[debug] [2025-04-24T09:59:03.114Z] [iam] checking project asmi-tj for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-24T09:59:03.114Z] Checked if tokens are valid: false, expires at: 1745489279577
+[debug] [2025-04-24T09:59:03.114Z] Checked if tokens are valid: false, expires at: 1745489279577
+[debug] [2025-04-24T09:59:03.114Z] > refreshing access token with scopes: []
+[debug] [2025-04-24T09:59:03.115Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-24T09:59:03.115Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-24T09:59:03.588Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-04-24T09:59:03.588Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-24T09:59:03.598Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions [none]
+[debug] [2025-04-24T09:59:03.598Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T09:59:03.598Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-24T09:59:04.300Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions 200
+[debug] [2025-04-24T09:59:04.300Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-24T09:59:04.301Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:04.301Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:04.301Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/asmi-tj/serviceAccounts/asmi-tj@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-04-24T09:59:04.301Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/asmi-tj/serviceAccounts/asmi-tj@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-04-24T09:59:05.031Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/asmi-tj/serviceAccounts/asmi-tj@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-04-24T09:59:05.031Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/asmi-tj/serviceAccounts/asmi-tj@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-04-24T09:59:05.032Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:05.032Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:05.032Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/asmi-tj [none]
+[debug] [2025-04-24T09:59:05.361Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/asmi-tj 200
+[debug] [2025-04-24T09:59:05.361Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/asmi-tj {"projectId":"asmi-tj","projectNumber":"562980239653","displayName":"projectai","name":"projects/asmi-tj","resources":{"hostingSite":"asmi-tj-4c375"},"state":"ACTIVE","etag":"1_a3d585a4-ae1c-4b0d-aeb3-941ce52a9cfb"}
+[info] 
+[info] === Deploying to 'asmi-tj'...
+[info] 
+[info] i  deploying functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run build
+[info] ✔  functions: Finished running predeploy script. 
+[debug] [2025-04-24T09:59:06.487Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:06.487Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:06.487Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj [none]
+[debug] [2025-04-24T09:59:06.667Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj 200
+[debug] [2025-04-24T09:59:06.667Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj {"projectNumber":"562980239653","projectId":"asmi-tj","lifecycleState":"ACTIVE","name":"projectai","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-04-23T16:28:44.312743Z"}
+[info] i  functions: preparing codebase functions-asmi for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2025-04-24T09:59:06.668Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:06.668Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:06.668Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:06.668Z] Checked if tokens are valid: true, expires at: 1745492342588
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2025-04-24T09:59:06.668Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:06.668Z] Checked if tokens are valid: true, expires at: 1745492342588
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2025-04-24T09:59:06.668Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:06.668Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:06.668Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-24T09:59:06.668Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T09:59:06.669Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-04-24T09:59:06.669Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T09:59:06.670Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/cloudbuild.googleapis.com [none]
+[debug] [2025-04-24T09:59:06.670Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/cloudbuild.googleapis.com x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T09:59:06.670Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/artifactregistry.googleapis.com [none]
+[debug] [2025-04-24T09:59:06.670Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/artifactregistry.googleapis.com x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T09:59:07.569Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/cloudbuild.googleapis.com 200
+[debug] [2025-04-24T09:59:07.569Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2025-04-24T09:59:07.570Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/runtimeconfig.googleapis.com 200
+[debug] [2025-04-24T09:59:07.570Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-04-24T09:59:07.589Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-24T09:59:07.589Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2025-04-24T09:59:07.598Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/artifactregistry.googleapis.com 200
+[debug] [2025-04-24T09:59:07.599Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2025-04-24T09:59:07.599Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:07.599Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:07.599Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/asmi-tj/adminSdkConfig [none]
+[debug] [2025-04-24T09:59:07.792Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/asmi-tj/adminSdkConfig 200
+[debug] [2025-04-24T09:59:07.792Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/asmi-tj/adminSdkConfig {"projectId":"asmi-tj","storageBucket":"asmi-tj.firebasestorage.app"}
+[debug] [2025-04-24T09:59:07.792Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:07.792Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:07.792Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/asmi-tj/configs [none]
+[debug] [2025-04-24T09:59:08.080Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/asmi-tj/configs 200
+[debug] [2025-04-24T09:59:08.080Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/asmi-tj/configs {"configs":[{"name":"projects/asmi-tj/configs/clerk"}]}
+[debug] [2025-04-24T09:59:08.080Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:08.080Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:08.080Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/asmi-tj/configs/clerk/variables [none]
+[debug] [2025-04-24T09:59:08.266Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/asmi-tj/configs/clerk/variables 200
+[debug] [2025-04-24T09:59:08.266Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/asmi-tj/configs/clerk/variables {"variables":[{"name":"projects/asmi-tj/configs/clerk/variables/publishable_key","updateTime":"2025-04-24T09:50:35.638068707Z"},{"name":"projects/asmi-tj/configs/clerk/variables/secret_key","updateTime":"2025-04-24T09:50:35.469581504Z"}]}
+[debug] [2025-04-24T09:59:08.267Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:08.267Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:08.267Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:08.267Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:08.267Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/asmi-tj/configs/clerk/variables/publishable_key [none]
+[debug] [2025-04-24T09:59:08.267Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/asmi-tj/configs/clerk/variables/secret_key [none]
+[debug] [2025-04-24T09:59:08.469Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/asmi-tj/configs/clerk/variables/publishable_key 200
+[debug] [2025-04-24T09:59:08.469Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/asmi-tj/configs/clerk/variables/publishable_key {"name":"projects/asmi-tj/configs/clerk/variables/publishable_key","updateTime":"2025-04-24T09:50:35.638068707Z","text":"pk_live_Y2xlcmsuanVudGVyLmV1JA"}
+[debug] [2025-04-24T09:59:08.475Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/asmi-tj/configs/clerk/variables/secret_key 200
+[debug] [2025-04-24T09:59:08.475Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/asmi-tj/configs/clerk/variables/secret_key {"name":"projects/asmi-tj/configs/clerk/variables/secret_key","updateTime":"2025-04-24T09:50:35.469581504Z","text":"sk_live_hEUWpfMYNnfUlApiG6l6b8uJLEatla9vrl3lyhvssW"}
+[debug] [2025-04-24T09:59:08.476Z] Validating nodejs source
+[debug] [2025-04-24T09:59:08.903Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-04-24T09:59:08.903Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase functions-asmi to determine what to deploy 
+[debug] [2025-04-24T09:59:08.904Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-04-24T09:59:08.908Z] Found firebase-functions binary at '/Users/georgeaddai/Desktop/asmi/functions-asmi/node_modules/.bin/firebase-functions'
+[info] Serving at port 8895
+
+[debug] [2025-04-24T09:59:09.188Z] Got response from /__/functions.yaml {"endpoints":{"nextApp":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"nextApp"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] i  extensions: ensuring required API firebaseextensions.googleapis.com is enabled... 
+[debug] [2025-04-24T09:59:13.202Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:13.202Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:13.202Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/firebaseextensions.googleapis.com [none]
+[debug] [2025-04-24T09:59:13.202Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/firebaseextensions.googleapis.com x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T09:59:14.074Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/firebaseextensions.googleapis.com 200
+[debug] [2025-04-24T09:59:14.074Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/firebaseextensions.googleapis.com [omitted]
+[info] ✔  extensions: required API firebaseextensions.googleapis.com is enabled 
+[debug] [2025-04-24T09:59:14.074Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-24T09:59:14.074Z] > authorizing via signed-in user (akwasivdsm@gmail.com)
+[debug] [2025-04-24T09:59:14.074Z] [iam] checking project asmi-tj for permissions ["firebase.projects.get","firebaseextensions.instances.list"]
+[debug] [2025-04-24T09:59:14.074Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:14.074Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:14.074Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions [none]
+[debug] [2025-04-24T09:59:14.074Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T09:59:14.075Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions {"permissions":["firebase.projects.get","firebaseextensions.instances.list"]}
+[debug] [2025-04-24T09:59:14.752Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions 200
+[debug] [2025-04-24T09:59:14.752Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions {"permissions":["firebase.projects.get","firebaseextensions.instances.list"]}
+[debug] [2025-04-24T09:59:14.752Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:14.752Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:14.753Z] >>> [apiv2][query] GET https://firebaseextensions.googleapis.com/v1beta/projects/asmi-tj/instances pageSize=100&pageToken=
+[debug] [2025-04-24T09:59:15.673Z] <<< [apiv2][status] GET https://firebaseextensions.googleapis.com/v1beta/projects/asmi-tj/instances 200
+[debug] [2025-04-24T09:59:15.673Z] <<< [apiv2][body] GET https://firebaseextensions.googleapis.com/v1beta/projects/asmi-tj/instances {}
+[info] i  functions: preparing functions-asmi directory for uploading... 
+[info] i  functions: packaged /Users/georgeaddai/Desktop/asmi/functions-asmi (63.46 KB) for uploading 
+[debug] [2025-04-24T09:59:15.689Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:15.689Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:15.689Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/asmi-tj/locations/-/functions [none]
+[debug] [2025-04-24T09:59:16.313Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/asmi-tj/locations/-/functions 200
+[debug] [2025-04-24T09:59:16.313Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/asmi-tj/locations/-/functions {}
+[debug] [2025-04-24T09:59:16.313Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:16.313Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:16.313Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2025-04-24T09:59:17.405Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/-/functions 200
+[debug] [2025-04-24T09:59:17.405Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/-/functions {}
+[info] i  functions: ensuring required API run.googleapis.com is enabled... 
+[debug] [2025-04-24T09:59:17.406Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:17.406Z] Checked if tokens are valid: true, expires at: 1745492342588
+[info] i  functions: ensuring required API eventarc.googleapis.com is enabled... 
+[debug] [2025-04-24T09:59:17.406Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:17.406Z] Checked if tokens are valid: true, expires at: 1745492342588
+[info] i  functions: ensuring required API pubsub.googleapis.com is enabled... 
+[debug] [2025-04-24T09:59:17.407Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:17.407Z] Checked if tokens are valid: true, expires at: 1745492342588
+[info] i  functions: ensuring required API storage.googleapis.com is enabled... 
+[debug] [2025-04-24T09:59:17.407Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:17.407Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:17.407Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/run.googleapis.com [none]
+[debug] [2025-04-24T09:59:17.407Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/run.googleapis.com x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T09:59:17.407Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/eventarc.googleapis.com [none]
+[debug] [2025-04-24T09:59:17.407Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/eventarc.googleapis.com x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T09:59:17.408Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/pubsub.googleapis.com [none]
+[debug] [2025-04-24T09:59:17.408Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/pubsub.googleapis.com x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T09:59:17.408Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/storage.googleapis.com [none]
+[debug] [2025-04-24T09:59:17.408Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/storage.googleapis.com x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T09:59:17.746Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/run.googleapis.com 200
+[debug] [2025-04-24T09:59:17.746Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/run.googleapis.com [omitted]
+[info] ✔  functions: required API run.googleapis.com is enabled 
+[debug] [2025-04-24T09:59:18.338Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/pubsub.googleapis.com 200
+[debug] [2025-04-24T09:59:18.338Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/pubsub.googleapis.com [omitted]
+[info] ✔  functions: required API pubsub.googleapis.com is enabled 
+[debug] [2025-04-24T09:59:18.338Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/storage.googleapis.com 200
+[debug] [2025-04-24T09:59:18.338Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/storage.googleapis.com [omitted]
+[info] ✔  functions: required API storage.googleapis.com is enabled 
+[debug] [2025-04-24T09:59:18.389Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/eventarc.googleapis.com 200
+[debug] [2025-04-24T09:59:18.389Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/eventarc.googleapis.com [omitted]
+[warn] ⚠  functions: missing required API eventarc.googleapis.com. Enabling now... 
+[debug] [2025-04-24T09:59:18.389Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:18.389Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:18.389Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/eventarc.googleapis.com:enable [none]
+[debug] [2025-04-24T09:59:18.389Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/eventarc.googleapis.com:enable x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T09:59:19.553Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/eventarc.googleapis.com:enable 200
+[debug] [2025-04-24T09:59:19.553Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/eventarc.googleapis.com:enable [omitted]
+[debug] [2025-04-24T09:59:29.554Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:29.554Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:29.554Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/eventarc.googleapis.com [none]
+[debug] [2025-04-24T09:59:29.554Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/eventarc.googleapis.com x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T09:59:30.418Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/eventarc.googleapis.com 200
+[debug] [2025-04-24T09:59:30.419Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/asmi-tj/services/eventarc.googleapis.com [omitted]
+[info] ✔  functions: required API eventarc.googleapis.com is enabled 
+[info] i  functions: generating the service identity for pubsub.googleapis.com... 
+[debug] [2025-04-24T09:59:30.420Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:30.420Z] Checked if tokens are valid: true, expires at: 1745492342588
+[info] i  functions: generating the service identity for eventarc.googleapis.com... 
+[debug] [2025-04-24T09:59:30.420Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:30.420Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:30.420Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/562980239653/services/pubsub.googleapis.com:generateServiceIdentity [none]
+[debug] [2025-04-24T09:59:30.420Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/562980239653/services/eventarc.googleapis.com:generateServiceIdentity [none]
+[debug] [2025-04-24T09:59:31.032Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/562980239653/services/pubsub.googleapis.com:generateServiceIdentity 200
+[debug] [2025-04-24T09:59:31.032Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/562980239653/services/pubsub.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-562980239653@gcp-sa-pubsub.iam.gserviceaccount.com","uniqueId":"100942614590498290492"}}
+[debug] [2025-04-24T09:59:31.514Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/562980239653/services/eventarc.googleapis.com:generateServiceIdentity 200
+[debug] [2025-04-24T09:59:31.514Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/562980239653/services/eventarc.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-562980239653@gcp-sa-eventarc.iam.gserviceaccount.com","uniqueId":"117669502133099549506"}}
+[debug] [2025-04-24T09:59:31.514Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:31.514Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:31.514Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj [none]
+[debug] [2025-04-24T09:59:32.203Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj 200
+[debug] [2025-04-24T09:59:32.203Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj {"projectNumber":"562980239653","projectId":"asmi-tj","lifecycleState":"ACTIVE","name":"projectai","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-04-23T16:28:44.312743Z"}
+[debug] [2025-04-24T09:59:32.204Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:32.204Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:32.204Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/asmi-tj-4c375/versions [none]
+[debug] [2025-04-24T09:59:32.204Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/asmi-tj-4c375/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-04-24T09:59:33.911Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/asmi-tj-4c375/versions 200
+[debug] [2025-04-24T09:59:33.911Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/asmi-tj-4c375/versions {"name":"projects/562980239653/sites/asmi-tj-4c375/versions/17ee7e9d563c09cc","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-04-24T09:59:33.912Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:33.912Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:33.912Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/asmi-tj/billingInfo [none]
+[debug] [2025-04-24T09:59:34.634Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/asmi-tj/billingInfo 200
+[debug] [2025-04-24T09:59:34.634Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/asmi-tj/billingInfo {"name":"projects/asmi-tj/billingInfo","projectId":"asmi-tj","billingAccountName":"billingAccounts/0148E1-576CA4-2B5B39","billingEnabled":true}
+[debug] [2025-04-24T09:59:34.635Z] [functions] found 1 new HTTP functions, testing setIamPolicy permission...
+[debug] [2025-04-24T09:59:34.635Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:34.635Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:34.635Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions [none]
+[debug] [2025-04-24T09:59:34.635Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T09:59:34.635Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2025-04-24T09:59:34.781Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions 200
+[debug] [2025-04-24T09:59:34.781Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2025-04-24T09:59:34.781Z] [functions] found setIamPolicy permission, proceeding with deploy
+[debug] [2025-04-24T09:59:34.781Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:34.781Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:34.781Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/functions:generateUploadUrl [none]
+[debug] [2025-04-24T09:59:36.528Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/functions:generateUploadUrl 200
+[debug] [2025-04-24T09:59:36.528Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/gcf-v2-uploads-562980239653.us-central1.cloudfunctions.appspot.com/9e2182b5-724b-4eb2-b5ee-0e7cd020f9c4.zip?GoogleAccessId=service-562980239653@gcf-admin-robot.iam.gserviceaccount.com&Expires=1745490576&Signature=C6hjHl%2FNdniLmMc6F%2FicimKndnnvpwIjZhSoY%2FpSyA8Pdg8lf7tigPvDcvIGdzmin1DVY2tHHx3L%2Fa8nNtx2CyMXAgb17NokigxkNJ6EROxZTuQMOkkdZSpjqMUriYcSJb9lGfRkmbQFHAvygwqE%2BvbplnuVF15Qcuu%2BjIne1%2FynFQO7Esi1Lv1%2B5%2FXPjyn%2BSh%2BlfBBrW1ZN3ckMtM14cIgYi8aNuuUnB0BjRzUTFSugoaQ8Mq9VDdfhEYIWEvGs8oAaDpp0P7A6h3jP3iU4d5bPnuWUx5RvgeHEDSBxXqFeDPYfU3oH%2BXT%2BBSTX6ohUVcNS9ApMEar%2FVyXICo%2BkqA%3D%3D","storageSource":{"bucket":"gcf-v2-uploads-562980239653.us-central1.cloudfunctions.appspot.com","object":"9e2182b5-724b-4eb2-b5ee-0e7cd020f9c4.zip"}}
+[debug] [2025-04-24T09:59:36.528Z] >>> [apiv2][query] PUT https://storage.googleapis.com/gcf-v2-uploads-562980239653.us-central1.cloudfunctions.appspot.com/9e2182b5-724b-4eb2-b5ee-0e7cd020f9c4.zip GoogleAccessId=service-562980239653%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1745490576&Signature=C6hjHl%2FNdniLmMc6F%2FicimKndnnvpwIjZhSoY%2FpSyA8Pdg8lf7tigPvDcvIGdzmin1DVY2tHHx3L%2Fa8nNtx2CyMXAgb17NokigxkNJ6EROxZTuQMOkkdZSpjqMUriYcSJb9lGfRkmbQFHAvygwqE%2BvbplnuVF15Qcuu%2BjIne1%2FynFQO7Esi1Lv1%2B5%2FXPjyn%2BSh%2BlfBBrW1ZN3ckMtM14cIgYi8aNuuUnB0BjRzUTFSugoaQ8Mq9VDdfhEYIWEvGs8oAaDpp0P7A6h3jP3iU4d5bPnuWUx5RvgeHEDSBxXqFeDPYfU3oH%2BXT%2BBSTX6ohUVcNS9ApMEar%2FVyXICo%2BkqA%3D%3D
+[debug] [2025-04-24T09:59:36.528Z] >>> [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-562980239653.us-central1.cloudfunctions.appspot.com/9e2182b5-724b-4eb2-b5ee-0e7cd020f9c4.zip [stream]
+[debug] [2025-04-24T09:59:37.076Z] <<< [apiv2][status] PUT https://storage.googleapis.com/gcf-v2-uploads-562980239653.us-central1.cloudfunctions.appspot.com/9e2182b5-724b-4eb2-b5ee-0e7cd020f9c4.zip 200
+[debug] [2025-04-24T09:59:37.076Z] <<< [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-562980239653.us-central1.cloudfunctions.appspot.com/9e2182b5-724b-4eb2-b5ee-0e7cd020f9c4.zip [omitted]
+[info] ✔  functions: functions-asmi folder uploaded successfully 
+[info] i  hosting[asmi-tj-4c375]: beginning deploy... 
+[info] i  hosting[asmi-tj-4c375]: found 2 files in public 
+[debug] [2025-04-24T09:59:37.083Z] [hosting] uploading with 200 concurrency
+[debug] [2025-04-24T09:59:37.084Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:37.084Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:37.085Z] [hosting] hash cache [cHVibGlj] stored for 2 files
+[debug] [2025-04-24T09:59:37.085Z] [hosting][hash queue][FINAL] {"max":0,"min":0,"avg":0,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":1}
+[debug] [2025-04-24T09:59:37.085Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/562980239653/sites/asmi-tj-4c375/versions/17ee7e9d563c09cc:populateFiles [none]
+[debug] [2025-04-24T09:59:37.085Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/562980239653/sites/asmi-tj-4c375/versions/17ee7e9d563c09cc:populateFiles {"files":{"/index.html":"62a344b39279cbe8f6689c4e93552894036433df9d979ce5b76c0aed5f6be319","/404.html":"b6abfbdc894d37c260154e281499dc6415bb6ad76b32f01ef94dee93aa897ac4"}}
+[debug] [2025-04-24T09:59:37.664Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/562980239653/sites/asmi-tj-4c375/versions/17ee7e9d563c09cc:populateFiles 200
+[debug] [2025-04-24T09:59:37.664Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/562980239653/sites/asmi-tj-4c375/versions/17ee7e9d563c09cc:populateFiles {"uploadRequiredHashes":["62a344b39279cbe8f6689c4e93552894036433df9d979ce5b76c0aed5f6be319","b6abfbdc894d37c260154e281499dc6415bb6ad76b32f01ef94dee93aa897ac4"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/asmi-tj-4c375/versions/17ee7e9d563c09cc/files"}
+[debug] [2025-04-24T09:59:37.664Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:37.664Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:37.664Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:37.664Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:37.664Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/asmi-tj-4c375/versions/17ee7e9d563c09cc/files/62a344b39279cbe8f6689c4e93552894036433df9d979ce5b76c0aed5f6be319 [none]
+[debug] [2025-04-24T09:59:37.664Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/asmi-tj-4c375/versions/17ee7e9d563c09cc/files/62a344b39279cbe8f6689c4e93552894036433df9d979ce5b76c0aed5f6be319 [stream]
+[debug] [2025-04-24T09:59:37.665Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/asmi-tj-4c375/versions/17ee7e9d563c09cc/files/b6abfbdc894d37c260154e281499dc6415bb6ad76b32f01ef94dee93aa897ac4 [none]
+[debug] [2025-04-24T09:59:37.665Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/asmi-tj-4c375/versions/17ee7e9d563c09cc/files/b6abfbdc894d37c260154e281499dc6415bb6ad76b32f01ef94dee93aa897ac4 [stream]
+[debug] [2025-04-24T09:59:37.665Z] [hosting][populate queue][FINAL] {"max":580,"min":580,"avg":580,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":581}
+[debug] [2025-04-24T09:59:37.665Z] [hosting] uploads queued: 2
+[debug] [2025-04-24T09:59:38.663Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/asmi-tj-4c375/versions/17ee7e9d563c09cc/files/b6abfbdc894d37c260154e281499dc6415bb6ad76b32f01ef94dee93aa897ac4 200
+[debug] [2025-04-24T09:59:38.663Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/asmi-tj-4c375/versions/17ee7e9d563c09cc/files/b6abfbdc894d37c260154e281499dc6415bb6ad76b32f01ef94dee93aa897ac4 [stream]
+[debug] [2025-04-24T09:59:38.667Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/asmi-tj-4c375/versions/17ee7e9d563c09cc/files/62a344b39279cbe8f6689c4e93552894036433df9d979ce5b76c0aed5f6be319 200
+[debug] [2025-04-24T09:59:38.667Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/asmi-tj-4c375/versions/17ee7e9d563c09cc/files/62a344b39279cbe8f6689c4e93552894036433df9d979ce5b76c0aed5f6be319 [stream]
+[debug] [2025-04-24T09:59:38.667Z] [hosting][upload queue][FINAL] {"max":1003,"min":999,"avg":1001,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":1003}
+[info] ✔  hosting[asmi-tj-4c375]: file upload complete 
+[debug] [2025-04-24T09:59:38.667Z] [hosting] deploy completed after 1589ms
+[info] i  functions: creating Node.js 22 (2nd Gen) function functions-asmi:nextApp(us-central1)... 
+[debug] [2025-04-24T09:59:38.669Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:38.669Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:38.669Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/functions functionId=nextApp
+[debug] [2025-04-24T09:59:38.669Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/functions {"name":"projects/asmi-tj/locations/us-central1/functions/nextApp","buildConfig":{"runtime":"nodejs22","entryPoint":"nextApp","source":{"storageSource":{"bucket":"gcf-v2-uploads-562980239653.us-central1.cloudfunctions.appspot.com","object":"9e2182b5-724b-4eb2-b5ee-0e7cd020f9c4.zip"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}},"serviceConfig":{"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"asmi-tj\",\"storageBucket\":\"asmi-tj.firebasestorage.app\"}","GCLOUD_PROJECT":"asmi-tj","EVENTARC_CLOUD_EVENT_SOURCE":"projects/asmi-tj/locations/us-central1/services/nextApp","FUNCTION_TARGET":"nextApp","LOG_EXECUTION_ID":"true"},"ingressSettings":null,"timeoutSeconds":null,"serviceAccountEmail":null,"availableMemory":"256Mi","minInstanceCount":null,"maxInstanceCount":null,"maxInstanceRequestConcurrency":80,"availableCpu":"1","vpcConnector":null,"vpcConnectorEgressSettings":null},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"functions-asmi","firebase-functions-hash":"61900d7e0fd55f12b99aa10ce4cf020aa055a3ef"}}
+[debug] [2025-04-24T09:59:40.327Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/functions 200
+[debug] [2025-04-24T09:59:40.327Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/functions {"name":"projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2025-04-24T09:59:40.250112592Z","target":"projects/asmi-tj/locations/us-central1/functions/nextApp","verb":"create","cancelRequested":false,"apiVersion":"v2"},"done":false}
+[debug] [2025-04-24T09:59:40.328Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:40.328Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:40.328Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 [none]
+[debug] [2025-04-24T09:59:41.020Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 200
+[debug] [2025-04-24T09:59:41.020Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 {"name":"projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2025-04-24T09:59:40.250112592Z","target":"projects/asmi-tj/locations/us-central1/functions/nextApp","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/asmi-tj/locations/us-central1/functions/nextApp","buildConfig":{"runtime":"nodejs22","entryPoint":"nextApp","source":{"storageSource":{"bucket":"gcf-v2-sources-562980239653-us-central1","object":"nextApp/function-source.zip","generation":"1745488780030709"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/asmi-tj/serviceAccounts/562980239653-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/asmi-tj/locations/us-central1/services/nextapp","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"asmi-tj\",\"storageBucket\":\"asmi-tj.firebasestorage.app\"}","GCLOUD_PROJECT":"asmi-tj","EVENTARC_CLOUD_EVENT_SOURCE":"projects/asmi-tj/locations/us-central1/services/nextApp","FUNCTION_TARGET":"nextApp","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"562980239653-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"functions-asmi","firebase-functions-hash":"61900d7e0fd55f12b99aa10ce4cf020aa055a3ef"},"environment":"GEN_2"},"stages":[{"name":"BUILD","state":"NOT_STARTED"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION"},"done":false}
+[debug] [2025-04-24T09:59:41.520Z] [create-functions-asmi-us-central1-nextApp] Retrying task index 0
+[debug] [2025-04-24T09:59:41.520Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:41.520Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:41.520Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 [none]
+[debug] [2025-04-24T09:59:42.201Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 200
+[debug] [2025-04-24T09:59:42.201Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 {"name":"projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2025-04-24T09:59:40.250112592Z","target":"projects/asmi-tj/locations/us-central1/functions/nextApp","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/asmi-tj/locations/us-central1/functions/nextApp","buildConfig":{"runtime":"nodejs22","entryPoint":"nextApp","source":{"storageSource":{"bucket":"gcf-v2-sources-562980239653-us-central1","object":"nextApp/function-source.zip","generation":"1745488780030709"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/asmi-tj/serviceAccounts/562980239653-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/asmi-tj/locations/us-central1/services/nextapp","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"asmi-tj\",\"storageBucket\":\"asmi-tj.firebasestorage.app\"}","GCLOUD_PROJECT":"asmi-tj","EVENTARC_CLOUD_EVENT_SOURCE":"projects/asmi-tj/locations/us-central1/services/nextApp","FUNCTION_TARGET":"nextApp","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"562980239653-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"functions-asmi","firebase-functions-hash":"61900d7e0fd55f12b99aa10ce4cf020aa055a3ef"},"environment":"GEN_2"},"stages":[{"name":"BUILD","state":"NOT_STARTED"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION"},"done":false}
+[debug] [2025-04-24T09:59:43.203Z] [create-functions-asmi-us-central1-nextApp] Retrying task index 0
+[debug] [2025-04-24T09:59:43.203Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:43.203Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:43.203Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 [none]
+[debug] [2025-04-24T09:59:43.874Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 200
+[debug] [2025-04-24T09:59:43.874Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 {"name":"projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2025-04-24T09:59:40.250112592Z","target":"projects/asmi-tj/locations/us-central1/functions/nextApp","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/asmi-tj/locations/us-central1/functions/nextApp","buildConfig":{"runtime":"nodejs22","entryPoint":"nextApp","source":{"storageSource":{"bucket":"gcf-v2-sources-562980239653-us-central1","object":"nextApp/function-source.zip","generation":"1745488780030709"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/asmi-tj/serviceAccounts/562980239653-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/asmi-tj/locations/us-central1/services/nextapp","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"asmi-tj\",\"storageBucket\":\"asmi-tj.firebasestorage.app\"}","GCLOUD_PROJECT":"asmi-tj","EVENTARC_CLOUD_EVENT_SOURCE":"projects/asmi-tj/locations/us-central1/services/nextApp","FUNCTION_TARGET":"nextApp","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"562980239653-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"functions-asmi","firebase-functions-hash":"61900d7e0fd55f12b99aa10ce4cf020aa055a3ef"},"environment":"GEN_2"},"stages":[{"name":"BUILD","state":"NOT_STARTED"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION"},"done":false}
+[debug] [2025-04-24T09:59:45.875Z] [create-functions-asmi-us-central1-nextApp] Retrying task index 0
+[debug] [2025-04-24T09:59:45.875Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:45.875Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:45.875Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 [none]
+[debug] [2025-04-24T09:59:46.549Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 200
+[debug] [2025-04-24T09:59:46.549Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 {"name":"projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2025-04-24T09:59:40.250112592Z","target":"projects/asmi-tj/locations/us-central1/functions/nextApp","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/asmi-tj/locations/us-central1/functions/nextApp","buildConfig":{"runtime":"nodejs22","entryPoint":"nextApp","source":{"storageSource":{"bucket":"gcf-v2-sources-562980239653-us-central1","object":"nextApp/function-source.zip","generation":"1745488780030709"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/asmi-tj/serviceAccounts/562980239653-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/asmi-tj/locations/us-central1/services/nextapp","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"asmi-tj\",\"storageBucket\":\"asmi-tj.firebasestorage.app\"}","GCLOUD_PROJECT":"asmi-tj","EVENTARC_CLOUD_EVENT_SOURCE":"projects/asmi-tj/locations/us-central1/services/nextApp","FUNCTION_TARGET":"nextApp","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"562980239653-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"functions-asmi","firebase-functions-hash":"61900d7e0fd55f12b99aa10ce4cf020aa055a3ef"},"environment":"GEN_2"},"stages":[{"name":"BUILD","state":"NOT_STARTED"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION"},"done":false}
+[debug] [2025-04-24T09:59:50.549Z] [create-functions-asmi-us-central1-nextApp] Retrying task index 0
+[debug] [2025-04-24T09:59:50.549Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:50.549Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:50.549Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 [none]
+[debug] [2025-04-24T09:59:50.898Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 200
+[debug] [2025-04-24T09:59:50.898Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 {"name":"projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2025-04-24T09:59:40.250112592Z","target":"projects/asmi-tj/locations/us-central1/functions/nextApp","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/asmi-tj/locations/us-central1/functions/nextApp","buildConfig":{"runtime":"nodejs22","entryPoint":"nextApp","source":{"storageSource":{"bucket":"gcf-v2-sources-562980239653-us-central1","object":"nextApp/function-source.zip","generation":"1745488780030709"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/asmi-tj/serviceAccounts/562980239653-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/asmi-tj/locations/us-central1/services/nextapp","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"asmi-tj\",\"storageBucket\":\"asmi-tj.firebasestorage.app\"}","GCLOUD_PROJECT":"asmi-tj","EVENTARC_CLOUD_EVENT_SOURCE":"projects/asmi-tj/locations/us-central1/services/nextApp","FUNCTION_TARGET":"nextApp","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"562980239653-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"functions-asmi","firebase-functions-hash":"61900d7e0fd55f12b99aa10ce4cf020aa055a3ef"},"environment":"GEN_2"},"stages":[{"name":"BUILD","message":"Build in progress","state":"IN_PROGRESS","resource":"projects/562980239653/locations/us-central1/builds/9d17592f-af09-4eb6-9262-98b2b035b2aa","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/9d17592f-af09-4eb6-9262-98b2b035b2aa?project=562980239653"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION","buildName":"projects/562980239653/locations/us-central1/builds/9d17592f-af09-4eb6-9262-98b2b035b2aa"},"done":false}
+[debug] [2025-04-24T09:59:58.900Z] [create-functions-asmi-us-central1-nextApp] Retrying task index 0
+[debug] [2025-04-24T09:59:58.900Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:58.901Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T09:59:58.901Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 [none]
+[debug] [2025-04-24T09:59:59.603Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 200
+[debug] [2025-04-24T09:59:59.603Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 {"name":"projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2025-04-24T09:59:40.250112592Z","target":"projects/asmi-tj/locations/us-central1/functions/nextApp","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/asmi-tj/locations/us-central1/functions/nextApp","buildConfig":{"runtime":"nodejs22","entryPoint":"nextApp","source":{"storageSource":{"bucket":"gcf-v2-sources-562980239653-us-central1","object":"nextApp/function-source.zip","generation":"1745488780030709"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/asmi-tj/serviceAccounts/562980239653-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/asmi-tj/locations/us-central1/services/nextapp","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"asmi-tj\",\"storageBucket\":\"asmi-tj.firebasestorage.app\"}","GCLOUD_PROJECT":"asmi-tj","EVENTARC_CLOUD_EVENT_SOURCE":"projects/asmi-tj/locations/us-central1/services/nextApp","FUNCTION_TARGET":"nextApp","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"562980239653-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"functions-asmi","firebase-functions-hash":"61900d7e0fd55f12b99aa10ce4cf020aa055a3ef"},"environment":"GEN_2"},"stages":[{"name":"BUILD","message":"Build in progress","state":"IN_PROGRESS","resource":"projects/562980239653/locations/us-central1/builds/9d17592f-af09-4eb6-9262-98b2b035b2aa","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/9d17592f-af09-4eb6-9262-98b2b035b2aa?project=562980239653"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION","buildName":"projects/562980239653/locations/us-central1/builds/9d17592f-af09-4eb6-9262-98b2b035b2aa"},"done":false}
+[debug] [2025-04-24T10:00:09.605Z] [create-functions-asmi-us-central1-nextApp] Retrying task index 0
+[debug] [2025-04-24T10:00:09.605Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:00:09.605Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:00:09.605Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 [none]
+[debug] [2025-04-24T10:00:10.358Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 200
+[debug] [2025-04-24T10:00:10.358Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 {"name":"projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2025-04-24T09:59:40.250112592Z","target":"projects/asmi-tj/locations/us-central1/functions/nextApp","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/asmi-tj/locations/us-central1/functions/nextApp","buildConfig":{"runtime":"nodejs22","entryPoint":"nextApp","source":{"storageSource":{"bucket":"gcf-v2-sources-562980239653-us-central1","object":"nextApp/function-source.zip","generation":"1745488780030709"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/asmi-tj/serviceAccounts/562980239653-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/asmi-tj/locations/us-central1/services/nextapp","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"asmi-tj\",\"storageBucket\":\"asmi-tj.firebasestorage.app\"}","GCLOUD_PROJECT":"asmi-tj","EVENTARC_CLOUD_EVENT_SOURCE":"projects/asmi-tj/locations/us-central1/services/nextApp","FUNCTION_TARGET":"nextApp","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"562980239653-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"functions-asmi","firebase-functions-hash":"61900d7e0fd55f12b99aa10ce4cf020aa055a3ef"},"environment":"GEN_2"},"stages":[{"name":"BUILD","message":"Build in progress","state":"IN_PROGRESS","resource":"projects/562980239653/locations/us-central1/builds/9d17592f-af09-4eb6-9262-98b2b035b2aa","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/9d17592f-af09-4eb6-9262-98b2b035b2aa?project=562980239653"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION","buildName":"projects/562980239653/locations/us-central1/builds/9d17592f-af09-4eb6-9262-98b2b035b2aa"},"done":false}
+[debug] [2025-04-24T10:00:20.359Z] [create-functions-asmi-us-central1-nextApp] Retrying task index 0
+[debug] [2025-04-24T10:00:20.359Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:00:20.359Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:00:20.359Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 [none]
+[debug] [2025-04-24T10:00:21.066Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 200
+[debug] [2025-04-24T10:00:21.066Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 {"name":"projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2025-04-24T09:59:40.250112592Z","target":"projects/asmi-tj/locations/us-central1/functions/nextApp","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/asmi-tj/locations/us-central1/functions/nextApp","buildConfig":{"runtime":"nodejs22","entryPoint":"nextApp","source":{"storageSource":{"bucket":"gcf-v2-sources-562980239653-us-central1","object":"nextApp/function-source.zip","generation":"1745488780030709"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/asmi-tj/serviceAccounts/562980239653-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/asmi-tj/locations/us-central1/services/nextapp","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"asmi-tj\",\"storageBucket\":\"asmi-tj.firebasestorage.app\"}","GCLOUD_PROJECT":"asmi-tj","EVENTARC_CLOUD_EVENT_SOURCE":"projects/asmi-tj/locations/us-central1/services/nextApp","FUNCTION_TARGET":"nextApp","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"562980239653-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"functions-asmi","firebase-functions-hash":"61900d7e0fd55f12b99aa10ce4cf020aa055a3ef"},"environment":"GEN_2"},"stages":[{"name":"BUILD","message":"Build in progress","state":"IN_PROGRESS","resource":"projects/562980239653/locations/us-central1/builds/9d17592f-af09-4eb6-9262-98b2b035b2aa","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/9d17592f-af09-4eb6-9262-98b2b035b2aa?project=562980239653"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION","buildName":"projects/562980239653/locations/us-central1/builds/9d17592f-af09-4eb6-9262-98b2b035b2aa"},"done":false}
+[debug] [2025-04-24T10:00:31.067Z] [create-functions-asmi-us-central1-nextApp] Retrying task index 0
+[debug] [2025-04-24T10:00:31.067Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:00:31.067Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:00:31.067Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 [none]
+[debug] [2025-04-24T10:00:31.786Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 200
+[debug] [2025-04-24T10:00:31.787Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 {"name":"projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2025-04-24T09:59:40.250112592Z","target":"projects/asmi-tj/locations/us-central1/functions/nextApp","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/asmi-tj/locations/us-central1/functions/nextApp","buildConfig":{"runtime":"nodejs22","entryPoint":"nextApp","source":{"storageSource":{"bucket":"gcf-v2-sources-562980239653-us-central1","object":"nextApp/function-source.zip","generation":"1745488780030709"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/asmi-tj/serviceAccounts/562980239653-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/asmi-tj/locations/us-central1/services/nextapp","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"asmi-tj\",\"storageBucket\":\"asmi-tj.firebasestorage.app\"}","GCLOUD_PROJECT":"asmi-tj","EVENTARC_CLOUD_EVENT_SOURCE":"projects/asmi-tj/locations/us-central1/services/nextApp","FUNCTION_TARGET":"nextApp","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"562980239653-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"functions-asmi","firebase-functions-hash":"61900d7e0fd55f12b99aa10ce4cf020aa055a3ef"},"environment":"GEN_2"},"stages":[{"name":"BUILD","message":"Build in progress","state":"IN_PROGRESS","resource":"projects/562980239653/locations/us-central1/builds/9d17592f-af09-4eb6-9262-98b2b035b2aa","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/9d17592f-af09-4eb6-9262-98b2b035b2aa?project=562980239653"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION","buildName":"projects/562980239653/locations/us-central1/builds/9d17592f-af09-4eb6-9262-98b2b035b2aa"},"done":false}
+[debug] [2025-04-24T10:00:41.786Z] [create-functions-asmi-us-central1-nextApp] Retrying task index 0
+[debug] [2025-04-24T10:00:41.786Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:00:41.786Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:00:41.787Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 [none]
+[debug] [2025-04-24T10:00:42.508Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 200
+[debug] [2025-04-24T10:00:42.508Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 {"name":"projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2025-04-24T09:59:40.250112592Z","target":"projects/asmi-tj/locations/us-central1/functions/nextApp","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/asmi-tj/locations/us-central1/functions/nextApp","buildConfig":{"runtime":"nodejs22","entryPoint":"nextApp","source":{"storageSource":{"bucket":"gcf-v2-sources-562980239653-us-central1","object":"nextApp/function-source.zip","generation":"1745488780030709"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/asmi-tj/serviceAccounts/562980239653-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/asmi-tj/locations/us-central1/services/nextapp","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"asmi-tj\",\"storageBucket\":\"asmi-tj.firebasestorage.app\"}","GCLOUD_PROJECT":"asmi-tj","EVENTARC_CLOUD_EVENT_SOURCE":"projects/asmi-tj/locations/us-central1/services/nextApp","FUNCTION_TARGET":"nextApp","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"562980239653-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"functions-asmi","firebase-functions-hash":"61900d7e0fd55f12b99aa10ce4cf020aa055a3ef"},"environment":"GEN_2"},"stages":[{"name":"BUILD","message":"Build in progress","state":"IN_PROGRESS","resource":"projects/562980239653/locations/us-central1/builds/9d17592f-af09-4eb6-9262-98b2b035b2aa","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/9d17592f-af09-4eb6-9262-98b2b035b2aa?project=562980239653"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION","buildName":"projects/562980239653/locations/us-central1/builds/9d17592f-af09-4eb6-9262-98b2b035b2aa"},"done":false}
+[debug] [2025-04-24T10:00:52.509Z] [create-functions-asmi-us-central1-nextApp] Retrying task index 0
+[debug] [2025-04-24T10:00:52.509Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:00:52.509Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:00:52.509Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 [none]
+[debug] [2025-04-24T10:00:53.235Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 200
+[debug] [2025-04-24T10:00:53.235Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 {"name":"projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2025-04-24T09:59:40.250112592Z","target":"projects/asmi-tj/locations/us-central1/functions/nextApp","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/asmi-tj/locations/us-central1/functions/nextApp","buildConfig":{"runtime":"nodejs22","entryPoint":"nextApp","source":{"storageSource":{"bucket":"gcf-v2-sources-562980239653-us-central1","object":"nextApp/function-source.zip","generation":"1745488780030709"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/asmi-tj/serviceAccounts/562980239653-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/asmi-tj/locations/us-central1/services/nextapp","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"asmi-tj\",\"storageBucket\":\"asmi-tj.firebasestorage.app\"}","GCLOUD_PROJECT":"asmi-tj","EVENTARC_CLOUD_EVENT_SOURCE":"projects/asmi-tj/locations/us-central1/services/nextApp","FUNCTION_TARGET":"nextApp","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"562980239653-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"functions-asmi","firebase-functions-hash":"61900d7e0fd55f12b99aa10ce4cf020aa055a3ef"},"environment":"GEN_2"},"stages":[{"name":"BUILD","message":"Build finished","state":"COMPLETE","resource":"projects/562980239653/locations/us-central1/builds/9d17592f-af09-4eb6-9262-98b2b035b2aa","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/9d17592f-af09-4eb6-9262-98b2b035b2aa?project=562980239653"},{"name":"SERVICE","message":"Creating Cloud Run service","state":"IN_PROGRESS","resource":"projects/asmi-tj/locations/us-central1/services/nextapp","resourceUri":"https://console.cloud.google.com/run/detail/us-central1/nextapp?project=asmi-tj"}],"sourceToken":"Cldwcm9qZWN0cy81NjI5ODAyMzk2NTMvbG9jYXRpb25zL3VzLWNlbnRyYWwxL2J1aWxkcy85ZDE3NTkyZi1hZjA5LTRlYjYtOTI2Mi05OGIyYjAzNWIyYWESW3VzLWNlbnRyYWwxLWRvY2tlci5wa2cuZGV2L2FzbWktdGovZ2NmLWFydGlmYWN0cy9hc21pLS10al9fdXMtLWNlbnRyYWwxX19uZXh0X2FwcDp2ZXJzaW9uXzEYpfLyobEQIjhwcm9qZWN0cy9hc21pLXRqL2xvY2F0aW9ucy91cy1jZW50cmFsMS9mdW5jdGlvbnMvbmV4dEFwcCoMCMyXqMAGEPDdkfoCMghub2RlanMyMjp2CiNnY3IuaW8vZ2FlLXJ1bnRpbWVzL25vZGVqczIyOnN0YWJsZRJPdXMtY2VudHJhbDEtZG9ja2VyLnBrZy5kZXYvc2VydmVybGVzcy1ydW50aW1lcy9nb29nbGUtMjItZnVsbC9ydW50aW1lcy9ub2RlanMyMkAB","operationType":"CREATE_FUNCTION","buildName":"projects/562980239653/locations/us-central1/builds/9d17592f-af09-4eb6-9262-98b2b035b2aa"},"done":false}
+[debug] [2025-04-24T10:00:53.236Z] Got source token Cldwcm9qZWN0cy81NjI5ODAyMzk2NTMvbG9jYXRpb25zL3VzLWNlbnRyYWwxL2J1aWxkcy85ZDE3NTkyZi1hZjA5LTRlYjYtOTI2Mi05OGIyYjAzNWIyYWESW3VzLWNlbnRyYWwxLWRvY2tlci5wa2cuZGV2L2FzbWktdGovZ2NmLWFydGlmYWN0cy9hc21pLS10al9fdXMtLWNlbnRyYWwxX19uZXh0X2FwcDp2ZXJzaW9uXzEYpfLyobEQIjhwcm9qZWN0cy9hc21pLXRqL2xvY2F0aW9ucy91cy1jZW50cmFsMS9mdW5jdGlvbnMvbmV4dEFwcCoMCMyXqMAGEPDdkfoCMghub2RlanMyMjp2CiNnY3IuaW8vZ2FlLXJ1bnRpbWVzL25vZGVqczIyOnN0YWJsZRJPdXMtY2VudHJhbDEtZG9ja2VyLnBrZy5kZXYvc2VydmVybGVzcy1ydW50aW1lcy9nb29nbGUtMjItZnVsbC9ydW50aW1lcy9ub2RlanMyMkAB for region us-central1
+[debug] [2025-04-24T10:01:03.235Z] [create-functions-asmi-us-central1-nextApp] Retrying task index 0
+[debug] [2025-04-24T10:01:03.235Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:01:03.236Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:01:03.236Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 [none]
+[debug] [2025-04-24T10:01:03.944Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 200
+[debug] [2025-04-24T10:01:03.944Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931 {"name":"projects/asmi-tj/locations/us-central1/operations/operation-1745488779362-6338346a73f53-f10962f3-df858931","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2025-04-24T09:59:40.250112592Z","endTime":"2025-04-24T10:01:00.901677125Z","target":"projects/asmi-tj/locations/us-central1/functions/nextApp","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/asmi-tj/locations/us-central1/functions/nextApp","buildConfig":{"runtime":"nodejs22","entryPoint":"nextApp","source":{"storageSource":{"bucket":"gcf-v2-sources-562980239653-us-central1","object":"nextApp/function-source.zip","generation":"1745488780030709"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/asmi-tj/serviceAccounts/562980239653-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/asmi-tj/locations/us-central1/services/nextapp","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"asmi-tj\",\"storageBucket\":\"asmi-tj.firebasestorage.app\"}","GCLOUD_PROJECT":"asmi-tj","EVENTARC_CLOUD_EVENT_SOURCE":"projects/asmi-tj/locations/us-central1/services/nextApp","FUNCTION_TARGET":"nextApp","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"562980239653-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"functions-asmi","firebase-functions-hash":"61900d7e0fd55f12b99aa10ce4cf020aa055a3ef"},"environment":"GEN_2"},"stages":[{"name":"ARTIFACT_REGISTRY","message":"Deleting function artifacts in Artifact Registry","state":"COMPLETE"},{"name":"SERVICE","message":"Deleting Cloud Run service","state":"COMPLETE","resource":"projects/asmi-tj/locations/us-central1/services/nextapp"}],"operationType":"CREATE_FUNCTION"},"done":true,"error":{"code":3,"message":"Could not create or update Cloud Run service nextapp, Container Healthcheck failed. Revision 'nextapp-00001-key' is not ready and cannot serve traffic. The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.\n\nLogs URL: https://console.cloud.google.com/logs/viewer?project=asmi-tj&resource=cloud_run_revision/service_name/nextapp/revision_name/nextapp-00001-key&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22nextapp%22%0Aresource.labels.revision_name%3D%22nextapp-00001-key%22 \nFor more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start"}}
+[debug] [2025-04-24T10:01:03.944Z] Got source token undefined for region us-central1
+[error] Could not create or update Cloud Run service nextapp, Container Healthcheck failed. Revision 'nextapp-00001-key' is not ready and cannot serve traffic. The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.
+
+Logs URL: https://console.cloud.google.com/logs/viewer?project=asmi-tj&resource=cloud_run_revision/service_name/nextapp/revision_name/nextapp-00001-key&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22nextapp%22%0Aresource.labels.revision_name%3D%22nextapp-00001-key%22 
+For more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start
+[debug] [2025-04-24T10:01:03.947Z] Total Function Deployment time: 85277
+[debug] [2025-04-24T10:01:03.947Z] 1 Functions Deployed
+[debug] [2025-04-24T10:01:03.947Z] 1 Functions Errored
+[debug] [2025-04-24T10:01:03.947Z] 0 Function Deployments Aborted
+[debug] [2025-04-24T10:01:03.947Z] Average Function Deployment time: 85277
+[info] 
+[info] Functions deploy had errors with the following functions:
+	functions-asmi:nextApp(us-central1)
+[debug] [2025-04-24T10:01:04.007Z] Not printing URL for HTTPS function. Typically this means it didn't match a filter or we failed deployment
+[debug] [2025-04-24T10:01:04.007Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:01:04.007Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:01:04.007Z] >>> [apiv2][query] GET https://artifactregistry.googleapis.com/v1/projects/asmi-tj/locations/us-central1/repositories/gcf-artifacts [none]
+[debug] [2025-04-24T10:01:04.861Z] <<< [apiv2][status] GET https://artifactregistry.googleapis.com/v1/projects/asmi-tj/locations/us-central1/repositories/gcf-artifacts 200
+[debug] [2025-04-24T10:01:04.862Z] <<< [apiv2][body] GET https://artifactregistry.googleapis.com/v1/projects/asmi-tj/locations/us-central1/repositories/gcf-artifacts {"name":"projects/asmi-tj/locations/us-central1/repositories/gcf-artifacts","format":"DOCKER","description":"This repository is created and used by Cloud Functions for storing function docker images.","labels":{"goog-managed-by":"cloudfunctions"},"createTime":"2025-04-24T09:59:47.976635Z","updateTime":"2025-04-24T10:01:00.769345Z","mode":"STANDARD_REPOSITORY","sizeBytes":"94438310","vulnerabilityScanningConfig":{"lastEnableTime":"2025-04-24T09:59:40.429596441Z","enablementState":"SCANNING_DISABLED","enablementStateReason":"API containerscanning.googleapis.com is not enabled."},"satisfiesPzi":true,"registryUri":"us-central1-docker.pkg.dev/asmi-tj/gcf-artifacts"}
+[warn] ⚠  functions: No cleanup policy detected for repositories in us-central1. This may result in a small monthly bill as container images accumulate over time. 
+[info] i  functions: Configuring cleanup policy for repository in us-central1. Images older than 1 days will be automatically deleted. 
+[debug] [2025-04-24T10:01:59.008Z] Setting up artifact cleanup policy for region us-central1
+[debug] [2025-04-24T10:01:59.008Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:01:59.008Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:01:59.008Z] >>> [apiv2][query] PATCH https://artifactregistry.googleapis.com/v1/projects/asmi-tj/locations/us-central1/repositories/gcf-artifacts updateMask=name%2CcleanupPolicies%2CcleanupPolicyDryRun%2Clabels
+[debug] [2025-04-24T10:01:59.008Z] >>> [apiv2][body] PATCH https://artifactregistry.googleapis.com/v1/projects/asmi-tj/locations/us-central1/repositories/gcf-artifacts {"name":"projects/asmi-tj/locations/us-central1/repositories/gcf-artifacts","cleanupPolicies":{"firebase-functions-cleanup":{"id":"firebase-functions-cleanup","condition":{"tagState":"ANY","olderThan":"86400s"},"action":"DELETE"}},"cleanupPolicyDryRun":false,"labels":{"goog-managed-by":"cloudfunctions"}}
+[debug] [2025-04-24T10:01:59.820Z] <<< [apiv2][status] PATCH https://artifactregistry.googleapis.com/v1/projects/asmi-tj/locations/us-central1/repositories/gcf-artifacts 200
+[debug] [2025-04-24T10:01:59.820Z] <<< [apiv2][body] PATCH https://artifactregistry.googleapis.com/v1/projects/asmi-tj/locations/us-central1/repositories/gcf-artifacts {"name":"projects/asmi-tj/locations/us-central1/repositories/gcf-artifacts","format":"DOCKER","description":"This repository is created and used by Cloud Functions for storing function docker images.","labels":{"goog-managed-by":"cloudfunctions"},"createTime":"2025-04-24T09:59:47.976635Z","updateTime":"2025-04-24T10:01:59.805542Z","mode":"STANDARD_REPOSITORY","cleanupPolicies":{"firebase-functions-cleanup":{"id":"firebase-functions-cleanup","action":"DELETE","condition":{"tagState":"ANY","olderThan":"86400s"}}},"vulnerabilityScanningConfig":{"lastEnableTime":"2025-04-24T09:59:40.429596441Z","enablementState":"SCANNING_DISABLED","enablementStateReason":"API containerscanning.googleapis.com is not enabled."},"satisfiesPzi":true}
+[info] i  functions: Configured cleanup policy for repository in us-central1. 
+[debug] [2025-04-24T10:01:59.820Z] Functions deploy failed.
+[debug] [2025-04-24T10:01:59.820Z] {
+  "endpoint": {
+    "id": "nextApp",
+    "project": "asmi-tj",
+    "region": "us-central1",
+    "entryPoint": "nextApp",
+    "platform": "gcfv2",
+    "runtime": "nodejs22",
+    "httpsTrigger": {},
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    },
+    "serviceAccount": null,
+    "ingressSettings": null,
+    "availableMemoryMb": null,
+    "timeoutSeconds": null,
+    "maxInstances": null,
+    "minInstances": null,
+    "concurrency": 80,
+    "vpc": null,
+    "environmentVariables": {
+      "FIREBASE_CONFIG": "{\"projectId\":\"asmi-tj\",\"storageBucket\":\"asmi-tj.firebasestorage.app\"}",
+      "GCLOUD_PROJECT": "asmi-tj",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/asmi-tj/locations/us-central1/services/nextApp"
+    },
+    "codebase": "functions-asmi",
+    "cpu": 1,
+    "targetedByOnly": true,
+    "hash": "61900d7e0fd55f12b99aa10ce4cf020aa055a3ef"
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "exit": 1,
+    "message": "Could not create or update Cloud Run service nextapp, Container Healthcheck failed. Revision 'nextapp-00001-key' is not ready and cannot serve traffic. The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.\n\nLogs URL: https://console.cloud.google.com/logs/viewer?project=asmi-tj&resource=cloud_run_revision/service_name/nextapp/revision_name/nextapp-00001-key&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22nextapp%22%0Aresource.labels.revision_name%3D%22nextapp-00001-key%22 \nFor more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start",
+    "original": {
+      "code": 3,
+      "message": "Could not create or update Cloud Run service nextapp, Container Healthcheck failed. Revision 'nextapp-00001-key' is not ready and cannot serve traffic. The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.\n\nLogs URL: https://console.cloud.google.com/logs/viewer?project=asmi-tj&resource=cloud_run_revision/service_name/nextapp/revision_name/nextapp-00001-key&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22nextapp%22%0Aresource.labels.revision_name%3D%22nextapp-00001-key%22 \nFor more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start"
+    },
+    "status": 3,
+    "code": 3
+  }
+}
+[debug] [2025-04-24T10:01:59.860Z] Error: Failed to create function nextApp in region us-central1
+    at /Users/georgeaddai/.nvm/versions/node/v23.11.0/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:294:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Fabricator.createV2Function (/Users/georgeaddai/.nvm/versions/node/v23.11.0/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:278:30)
+    at async Fabricator.createEndpoint (/Users/georgeaddai/.nvm/versions/node/v23.11.0/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:137:13)
+    at async handle (/Users/georgeaddai/.nvm/versions/node/v23.11.0/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:89:17)
+[error] 
+[error] Error: There was an error deploying functions

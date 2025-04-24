@@ -1,0 +1,16 @@
+[debug] [2025-04-24T10:07:33.296Z] ----------------------------------------------------------------------
+[debug] [2025-04-24T10:07:33.298Z] Command:       /Users/georgeaddai/.nvm/versions/node/v23.11.0/bin/node /Users/georgeaddai/.nvm/versions/node/v23.11.0/bin/firebase deploy --only functions:functions-asmi
+[debug] [2025-04-24T10:07:33.298Z] CLI Version:   14.2.0
+[debug] [2025-04-24T10:07:33.298Z] Platform:      darwin
+[debug] [2025-04-24T10:07:33.298Z] Node Version:  v23.11.0
+[debug] [2025-04-24T10:07:33.298Z] Time:          Thu Apr 24 2025 12:07:33 GMT+0200 (Central European Summer Time)
+[debug] [2025-04-24T10:07:33.299Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-24T10:07:33.384Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-24T10:07:33.385Z] > authorizing via signed-in user (akwasivdsm@gmail.com)
+[debug] [2025-04-24T10:07:33.385Z] [iam] checking project asmi-tj for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2025-04-24T10:07:33.385Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:07:33.385Z] Checked if tokens are valid: true, expires at: 1745492342588
+[debug] [2025-04-24T10:07:33.386Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions [none]
+[debug] [2025-04-24T10:07:33.386Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions x-goog-quota-user=projects/asmi-tj
+[debug] [2025-04-24T10:07:33.386Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/asmi-tj:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
