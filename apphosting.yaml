@@ -7,13 +7,13 @@ runConfig:
   cpu: 8
   memoryMiB: 16384
 
-#env:
-#-   variable: NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
-#    value: pk_live_Y2xlcmsuanVudGVyLmV1JA
+env:
+-   variable: NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+    value: pk_live_Y2xlcmsuanVudGVyLmV1JA
 
-#env:
-#-   variable: CLERK_SECRET_KEY
-#    value: sk_live_hEUWpfMYNnfUlApiG6l6b8uJLEatla9vrl3lyhvssW
+env:
+-   variable: CLERK_SECRET_KEY
+    value: sk_live_hEUWpfMYNnfUlApiG6l6b8uJLEatla9vrl3lyhvssW
 # Environment variables and secrets.
 # env:
   # Configure environment variables.

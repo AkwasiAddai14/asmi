@@ -1,4 +1,4 @@
-/*import { Providers } from "@/app/providers";
+import { Providers } from "@/app/providers";
 import { SignIn } from "@clerk/nextjs";
 
 export default function Page() {
@@ -13,4 +13,4 @@ export default function Page() {
       </Providers>
     </>
   );
-}  */
+}  
