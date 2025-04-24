@@ -8,4 +8,7 @@ module.exports = {
     CLERK_SECRET_KEY: process.env.CLERK_SECRET_KEY
   }
 };
+
+console.log('Build-time Clerk Key:', process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY);
+
   
