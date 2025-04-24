@@ -5,7 +5,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import { GitHubIcon,  InstagramIcon,  LinkedInIcon,  XIcon } from '@/components/SocialIcons'
+import { FacebookIcon,  InstagramIcon,  LinkedInIcon,  XIcon } from '@/components/SocialIcons'
 import logo from '@/images/photos/178884748_padded_logo.png'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -278,19 +278,23 @@ export default async function Home() {
 </p>
 
           <div className="mt-6 flex gap-6">
-            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
             <SocialLink
-              href="#"
+              href="https://www.instagram.com/junterworks?igsh=dHozbjZmeTF6czRy&utm_source=qr"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
-            {/* <SocialLink
-              href="#"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            /> */}
+            <SocialLink 
+            href="https://x.com/juntersocials/status/1807533785858396501?s=12" 
+            aria-label="Follow on X" 
+            icon={XIcon} 
+            />
             <SocialLink
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61560497681355"
+              aria-label="Follow on Meta"
+              icon={FacebookIcon}
+            />
+            <SocialLink
+              href="https://www.linkedin.com/in/junter-socials-380a43312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
