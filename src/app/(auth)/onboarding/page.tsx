@@ -35,11 +35,11 @@ function Page() {
 
   return (
 <>
+<main className="flex-grow">
     <ClerkProvider
     localization={nlNL}
     publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
     >
-      <main className="flex-grow">
         {showDialog ? (
           <OnboardingDialog
             onNieuwkomerSelected={handleNieuwkomerSelected}
@@ -101,8 +101,8 @@ function Page() {
             iban: '',
           }} />
         )}
-      </main>
       </ClerkProvider>
+      </main>
     </>
   );
 }

@@ -1,7 +1,7 @@
+import { AcademicCapIcon, UserGroupIcon, PresentationChartLineIcon, InformationCircleIcon } from '@heroicons/react/20/solid'
 import foto from '@/images/photos/iStock-1298571081.jpg'
 import Image from 'next/image';
-import { AcademicCapIcon, UserGroupIcon, PresentationChartLineIcon, InformationCircleIcon } from '@heroicons/react/20/solid'
-
+import { SimpleLayout } from '@/components/SimpleLayout'
 const features = [
   {
     name: 'Gemotiveerde medewerkers.',

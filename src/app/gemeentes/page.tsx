@@ -1,6 +1,7 @@
 import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/react/20/solid';
 import foto from '@/images/photos/iStock-1298571081.jpg'
 import Image from 'next/image';
+import { SimpleLayout } from '@/components/SimpleLayout'
 
 
 export default function GemeentenPage({
@@ -9,7 +10,8 @@ export default function GemeentenPage({
   children: React.ReactNode
 }) {
   return (
-    <div className="bg-white px-6 py-32 lg:px-8">
+    <SimpleLayout title={''} intro={''}>
+    <div className="bg-white px-6 py-16 lg:px-8">
       <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
         <p className="text-base/7 font-semibold text-sky-600">Samenwerken aan duurzame participatie</p>
         <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
@@ -101,5 +103,6 @@ export default function GemeentenPage({
         </div>
       </div>
     </div>
+    </SimpleLayout>
   );
 }

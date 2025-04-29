@@ -1,6 +1,7 @@
 import { BriefcaseIcon, UserGroupIcon, AcademicCapIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
 import foto from '@/images/photos/iStock-2149706236.jpg'
+import { SimpleLayout } from '@/components/SimpleLayout'
 const features = [
   {
     name: 'Begeleiding naar passend werk.',
@@ -28,6 +29,7 @@ export default function StatushoudersPage({
   children: React.ReactNode
 }) {
   return (
+    
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
