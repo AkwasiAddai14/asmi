@@ -12,10 +12,10 @@ import {
   PopoverPanel,
 } from '@headlessui/react'
 import clsx from 'clsx'
-// import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/avatar.jpg'
-import router from 'next/router'
+
 
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -199,6 +199,7 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
 }
 
 function ThemeToggle() {
+  const router = useRouter();
   let { resolvedTheme, setTheme } = useTheme()
   let otherTheme = resolvedTheme === 'dark' ? 'light' : 'dark'
   let [mounted, setMounted] = useState(false)
