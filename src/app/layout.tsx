@@ -30,14 +30,14 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <body className="flex h-full bg-zinc-50 dark:bg-black">
         <Providers>
-        <ClerkProvider 
+        {/* <ClerkProvider 
     publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
     localization={nlNL}
-    >
+    > */}
           <div className="flex w-full">
             <Layout>{children}</Layout>
           </div>
-          </ClerkProvider>
+          {/* </ClerkProvider> */}
         </Providers>
       </body>
     </html>

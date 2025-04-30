@@ -1,11 +1,12 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import mohammed from '@/images/photos/mohammed.jpg'
 
 export const article = {
-  author: 'Team [Jouw Bedrijfsnaam]',
+  author: 'Junter Uitzendbureau',
   date: '2024-04-21',
   title: 'Van kansenzoeker tot gewaardeerde medewerker: het verhaal van Mohammed',
   description:
-    'Hoe Mohammed als statushouder uit Jemen met de juiste begeleiding een succesvolle start maakte op de Nederlandse arbeidsmarkt.',
+    'Hoe Mohammed als statushouder uit Uganda met de juiste begeleiding een succesvolle start maakte op de Nederlandse arbeidsmarkt.',
 }
 
 export const metadata = {
@@ -15,25 +16,13 @@ export const metadata = {
 
 export default (props) => <ArticleLayout article={article} {...props} />
 
-Toen Mohammed (29) uit Jemen naar Nederland kwam, had hij één groot doel:  
+Toen Mohammed (29) uit Uganda naar Nederland kwam, had hij één groot doel:  
 zijn leven opnieuw opbouwen en werken aan een toekomst voor zichzelf en zijn gezin.  
-Met werkervaring in de logistiek, maar zonder Nederlands diploma of netwerk, was het lastig om een baan te vinden.
+Met werkervaring in de Horeca, maar zonder Nederlands diploma of netwerk, was het lastig om een baan te vinden.
+<Image src={mohammed} alt="Mohammed vol trots aan het werk" />
 
 Via een kennismakingsgesprek bij ons brachten we zijn werkervaring en ambities in kaart.  
 Samen keken we naar welke functies bij hem pasten, welke ondersteuning hij nodig had,  
 en welke bedrijven openstonden voor gemotiveerde nieuwkomers.
 
-```js
-// Zo zag het traject van Mohammed eruit:
-import { intake, match, begeleiden, taalondersteuning } from '@jouw-bedrijfsnaam/traject'
 
-export function TrajectMohammed({ kandidaat }) {
-  return (
-    <intake
-      kandidaat={kandidaat}
-      vaardigheden="logistiek"
-      traject="taalondersteuning + coaching"
-      doel="vaste werkplek in magazijn"
-    />
-  )
-}

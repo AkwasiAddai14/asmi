@@ -1,7 +1,7 @@
 import { AcademicCapIcon, UserGroupIcon, PresentationChartLineIcon, InformationCircleIcon } from '@heroicons/react/20/solid'
-import foto from '@/images/photos/iStock-1298571081.jpg'
+import amina from '@/images/photos/amina.jpg'
 import Image from 'next/image';
-import { SimpleLayout } from '@/components/SimpleLayout'
+
 const features = [
   {
     name: 'Gemotiveerde medewerkers.',
@@ -54,7 +54,7 @@ export default function BedrijvenPage() {
               <figure className="mt-16">
         <Image
           alt="Statushouders aan het werk"
-          src={foto}
+          src={amina}
           width={2432}
           height={1442}
           className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:ml-0"
